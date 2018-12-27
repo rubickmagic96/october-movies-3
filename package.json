@@ -1,0 +1,30 @@
+{
+  "name": "octobermovies3",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">     <img src=\"https://github.com/octobercms/october/blob/master/themes/demo/assets/images/october.png?raw=true\" alt=\"October\" width=\"25%\" height=\"25%\" /> </p>",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "rasyidcode",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3",
+    "bootstrap": "^4.2.1",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^4.0.12",
+    "resolve-url-loader": "^2.3.1",
+    "sass": "^1.15.2",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.21"
+  }
+}
