@@ -9,7 +9,8 @@ scope = "-"
 scopeValue = "{{ :scope }}"
 displayColumn = "name"
 noRecordsMessage = "No records found"
-detailsPage = "-"
+detailsPage = "movie-single"
+detailsKeyColumn = "id"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
 ==
@@ -39,7 +40,7 @@ pageNumber = "{{ :page }}"
                 {% endspaceless %}
             </h3>
     
-            {{ html_limit(record.description, 150)|raw }}
+            {{ record.description|raw }}
         </li>
         {% else %}
         <li class="no-data">{{ noRecordsMessage }}</li>
