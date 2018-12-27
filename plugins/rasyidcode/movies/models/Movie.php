@@ -26,4 +26,13 @@ class Movie extends Model
      */
     public $rules = [
     ];
+
+    /* Relations */
+    public $attachOne = [
+        'poster' => 'System\Models\File'
+    ];
+
+    public $attachMany = [
+        'gallery' => 'System\Models\File'
+    ];
 }

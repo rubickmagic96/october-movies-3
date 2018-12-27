@@ -17,7 +17,18 @@ notFoundMessage = "Record not found"
 <div class="container">
     {% if record %}
         <h4>{{ record.name }}</h4>
+        
+        <img src="{{ record.poster.thumb(200, auto) }}" alt="">
+
         <h5>{{ record.year }}</h5>
+
+        <h4>Gallery</h4>
+
+        <ul>
+            {% for image in record.gallery %}
+                <li><img src="{{ image.thumb(200, 200) }}" alt=""></li>
+            {% endfor %}
+        </ul>
 
         <p>{{ record.description|raw }}</p>
     {% else %}
