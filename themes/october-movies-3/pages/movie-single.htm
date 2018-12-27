@@ -1,12 +1,12 @@
 title = "Movie Single"
-url = "/movie/:id"
+url = "/movie/:slug"
 layout = "default"
 is_hidden = 0
 
 [builderDetails]
 modelClass = "Rasyidcode\Movies\Models\Movie"
-identifierValue = "{{ :id }}"
-modelKeyColumn = "id"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
 displayColumn = "name"
 notFoundMessage = "Record not found"
 ==
