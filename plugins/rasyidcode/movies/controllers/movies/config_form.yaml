@@ -1,0 +1,10 @@
+name: Movies
+form: $/rasyidcode/movies/models/movie/fields.yaml
+modelClass: Rasyidcode\Movies\Models\Movie
+defaultRedirect: rasyidcode/movies/movies
+create:
+    redirect: 'rasyidcode/movies/movies/update/:id'
+    redirectClose: rasyidcode/movies/movies
+update:
+    redirect: rasyidcode/movies/movies
+    redirectClose: rasyidcode/movies/movies

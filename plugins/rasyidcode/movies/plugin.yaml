@@ -1,0 +1,11 @@
+plugin:
+    name: 'rasyidcode.movies::lang.plugin.name'
+    description: 'rasyidcode.movies::lang.plugin.description'
+    author: rasyidcode
+    icon: oc-icon-video-camera
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Movies
+        url: rasyidcode/movies/movies
+        icon: icon-video-camera
