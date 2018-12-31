@@ -26,4 +26,12 @@ class Genre extends Model
      */
     public $rules = [
     ];
+
+    public $belongsToMany = [
+        'movies' => [
+            'Rasyidcode\Movies\Models\Movie',
+            'table' => 'rasyidcode_movies_movies_genres',
+            'order' => 'name'
+        ]
+    ];
 }

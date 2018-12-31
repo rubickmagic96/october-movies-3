@@ -14,8 +14,16 @@ notFoundMessage = "Record not found"
 {% set displayColumn = builderDetails.displayColumn %}
 {% set notFoundMessage = builderDetails.notFoundMessage %}
 
-{% if record %}
-    {{ attribute(record, displayColumn) }}
-{% else %}
-    {{ notFoundMessage }}
-{% endif %}
+<div class="container">
+    {% if record %}
+        <h3>{{ record.name }}</h3>
+
+        <ul>
+            {% for movie in record.movies %}
+                <li>{{ movie.name }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        {{ notFoundMessage }}
+    {% endif %}
+</div>
