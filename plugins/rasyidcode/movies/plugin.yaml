@@ -9,3 +9,8 @@ navigation:
         label: Movies
         url: rasyidcode/movies/movies
         icon: icon-video-camera
+        sideMenu:
+            side-menu-item:
+                label: Genres
+                url: rasyidcode/movies/genres
+                icon: icon-tags

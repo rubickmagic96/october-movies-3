@@ -41,3 +41,9 @@ fields:
         imageWidth: '80'
         imageHeight: '80'
         type: fileupload
+    genre:
+        label: Genre
+        span: auto
+        nameFrom: name
+        descriptionFrom: description
+        type: relation

@@ -6,3 +6,9 @@
 1.0.3:
     - 'Updated table rasyidcode_movies_'
     - builder_table_update_rasyidcode_movies_.php
+1.0.4:
+    - 'Created table rasyidcode_movies_genres'
+    - builder_table_create_rasyidcode_movies_genres.php
+1.0.5:
+    - 'Created table rasyidcode_movies_movies_genres'
+    - builder_table_create_rasyidcode_movies_movies_genres.php

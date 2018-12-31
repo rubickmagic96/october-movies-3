@@ -1,0 +1,10 @@
+name: Genres
+form: $/rasyidcode/movies/models/genre/fields.yaml
+modelClass: Rasyidcode\Movies\Models\Genre
+defaultRedirect: rasyidcode/movies/genres
+create:
+    redirect: 'rasyidcode/movies/genres/update/:id'
+    redirectClose: rasyidcode/movies/genres
+update:
+    redirect: rasyidcode/movies/genres
+    redirectClose: rasyidcode/movies/genres
