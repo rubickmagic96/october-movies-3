@@ -43,4 +43,6 @@ class Movie extends Model
             'order' => 'name'
         ]
     ];
+
+    protected $jsonable = ['actors'];
 }

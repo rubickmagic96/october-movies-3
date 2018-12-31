@@ -32,6 +32,14 @@ notFoundMessage = "Record not found"
 
         <p>{{ record.description|raw }}</p>
 
+        <h3>Actors</h3>
+
+        <ul>
+            {% for actor in record.actors %}
+                <li>{{ actor.name }}</li>
+            {% endfor %}
+        </ul>
+
         <h4>Genre</h4>
         {% for gen in record.genre %}
             <a href="/genre/{{gen.slug}}">{{gen.name}}</a>
