@@ -1,0 +1,21 @@
+<style type="text/css">
+    .select2-container {
+        width: 100% !important;
+        display: block;
+    }
+</style>
+
+<select class="s2" multiple>
+    <option value="1">Tom Hanks</option>
+    <option value="2">Tim Allen</option>
+    <option value="3">Joan Cusack</option>
+</select>
+
+<script type="text/javascript">
+    $(document).on('render', function() {
+        $('.s2').select2({
+            placeholder: 'Add Actors',
+            tags: true
+        });
+    });
+</script>

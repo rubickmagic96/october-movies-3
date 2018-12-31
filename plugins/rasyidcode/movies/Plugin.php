@@ -11,4 +11,13 @@ class Plugin extends PluginBase
     public function registerSettings()
     {
     }
+
+    public function registerFormWidgets() {
+        return [
+            'Rasyidcode\Movies\FormWidgets\Actorbox' => [
+                'label' => 'Actorbox Field',
+                'code' => 'actorbox'
+            ]
+            ];
+    }
 }

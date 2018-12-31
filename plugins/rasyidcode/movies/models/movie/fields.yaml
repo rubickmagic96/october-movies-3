@@ -49,16 +49,5 @@ fields:
         type: relation
     actors:
         label: Actors
-        prompt: 'Add new item'
-        span: auto
-        type: repeater
-        form:
-            fields:
-                name:
-                    label: Name
-                    span: auto
-                    type: text
-                age:
-                    label: Age
-                    span: auto
-                    type: text
+        span: left
+        type: actorbox
