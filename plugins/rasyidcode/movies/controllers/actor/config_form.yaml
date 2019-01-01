@@ -1,0 +1,10 @@
+name: Actor
+form: $/rasyidcode/movies/models/actor/fields.yaml
+modelClass: Rasyidcode\Movies\Models\Actor
+defaultRedirect: rasyidcode/movies/actor
+create:
+    redirect: 'rasyidcode/movies/actor/update/:id'
+    redirectClose: rasyidcode/movies/actor
+update:
+    redirect: rasyidcode/movies/actor
+    redirectClose: rasyidcode/movies/actor

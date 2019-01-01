@@ -14,3 +14,7 @@ navigation:
                 label: Genres
                 url: rasyidcode/movies/genres
                 icon: icon-tags
+            side-menu-item2:
+                label: Actors
+                url: rasyidcode/movies/actor
+                icon: icon-user-md

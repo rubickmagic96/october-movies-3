@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class Movie extends Model
+class Actor extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     
@@ -19,7 +19,7 @@ class Movie extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'rasyidcode_movies_';
+    public $table = 'rasyidcode_movies_actors';
 
     /**
      * @var array Validation rules
@@ -27,27 +27,15 @@ class Movie extends Model
     public $rules = [
     ];
 
-    /* Relations */
-    public $attachOne = [
-        'poster' => 'System\Models\File'
-    ];
-
-    public $attachMany = [
-        'gallery' => 'System\Models\File'
-    ];
-
     public $belongsToMany = [
-        'genre' => [
-            'Rasyidcode\Movies\Models\Genre',
-            'table' => 'rasyidcode_movies_movies_genres',
-            'order' => 'name'
-        ],
-        'actors' => [
-            'Rasyidcode\Movies\Models\Actor',
+        'movies' => [
+            'Rasyidcode\Movies\Models\Movie',
             'table' => 'rasyidcode_movies_actors_movies',
             'order' => 'name'
         ]
     ];
 
-    //protected $jsonable = ['actors'];
+    public function getFullNameAttribute() {
+        return $this->name. " ".$this->lastname;
+    }
 }

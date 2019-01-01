@@ -1,0 +1,4 @@
+title: Actor
+modelClass: Rasyidcode\Movies\Models\Actor
+toolbar:
+    buttons: reorder_toolbar
