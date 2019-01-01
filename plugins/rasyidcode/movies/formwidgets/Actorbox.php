@@ -31,6 +31,25 @@ class ActorBox extends FormWidgetBase {
         }
     }
 
+    public function getSaveValue($actors) {
+        $newArray = [];
+
+        foreach($actors as $actorID) {
+            if (!is_numeric($actorID)) {
+                $newActor = new Actor;
+                $nameLastName = explode(' ', $actorID);
+                $newActor->name = $nameLastName[0];
+                $newActor->lastname = $nameLastName[1];
+                $newActor->save();
+                $newArray[] = $newActor->id;
+            } else {
+                $newArray[] = $actorID;
+            }
+        }
+
+        return $newArray;
+    }
+
     public function loadAssets() {
         $this->addCss('css/select2.css');
         $this->addJs('js/select2.js');
