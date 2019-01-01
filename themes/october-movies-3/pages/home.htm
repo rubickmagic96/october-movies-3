@@ -4,9 +4,17 @@ layout = "default"
 is_hidden = 0
 
 [actors]
+results = 3
+sortOrder = "name asc"
 ==
 <div class="container">
     <h1>Hello There</h1>
 </div>
 
-{% component 'actors' %}
+{% set actors = actors.actors %}
+
+<ul>
+    {%  for actor in actors %}
+        <li>{{ actor.name }} {{ actor.lastname }}</li>
+    {% endfor %}
+</ul>
